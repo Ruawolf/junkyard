@@ -2,16 +2,16 @@
 `BinaryReader.ReadString()`のゼロアロケーション代替です。
 
 > [!NOTE]
-> `BinaryReader.ReadChars()`は`ReadString()`と互換がなく、`byte[]`を返すメソッドしかないです。
+> `BinaryReader.ReadChars()`は`ReadString()`と互換がなく、`byte[]`を返すメソッドしかありません。
 
 ### Environment
 - .NET 8.0
 
 ### Usage
-拡張メソッドになっているので、BinaryReaderのインスタンスから
 
 #### パラメーター
 `Span<char> charSpan` 書き込み用バッファ
+</br>
 `out int charsSize` 読み取れた文字数
 
 #### 戻り値
